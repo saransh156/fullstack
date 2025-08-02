@@ -1,0 +1,95 @@
+<!-  -Assignment 1: Build a Survey Form using HTML
+In this assignment, you will create a basic Survey Form using only HTML. This form will help you practice essential HTML tags and attributes by collecting user inputs through different types of fields.
+What You Need to Build:
+Survey Form Interface: Design a clean and structured form where users can input their responses using text fields, checkboxes, and radio buttons.
+User-Friendly Structure: Organize the form so that it is easy to fill out and understand.
+Data Collection Setup: Include fields that collect meaningful user data, such as name, age, preferences, and feedback.
+Responsive Tags: Use proper HTML semantics to ensure your form works well across different screen sizes (no styling needed at this stage).
+Focus on the structure and functionality of the form. Do not use any CSS or JavaScript in this assignment.  -->
+
+<! DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation Survey</title>
+</head>
+<body  style="background-color : lightblue;" >
+
+<h4> "Donate Blood, Save Lives – Be Someone’s Hero Today!"  </h4>
+
+<form>
+<div>
+<label for = "name" > enter your name: </label>
+<input type = "text" id = "name"   >
+</div> <br>
+<div>
+<label for = "age" > enter your age: <label>
+<input type =text" id = "age" required>
+</div>
+<br>
+<div>
+<label for "dob" > enter your date of birth </label>
+<input type = "date" id = "dob" required >
+
+<!-- </div>
+<br>
+<div>
+<label>BLOOD GROUP: </label> <br>
+<input type = "radio" id = "A+" name = "blood group" value ="A+" required  >
+<lable for = " A+ "> A+ </label> 
+<input type = "radio" id = "B+" name = "blood group" value ="B+" required  >
+<lable for = " B+ "> B+ </label> 
+<input type = "radio" id = "AB+" name = "blood group" value ="AB+" required  >
+<lable for = " AB+ "> AB+ </label> 
+<input type = "radio" id = "O+" name = "blood group" value ="0+" required  >
+<lable for = " O+ "> O+ </label> 
+<input type = "radio" id = "B-" name = "blood group" value ="B-" required  >
+<lable for = " B- "> B- </label> 
+<input type = "radio" id = "O-" name = "blood group" value ="O-" required  >
+<lable for = " O- "> O- </label> 
+</div> -->
+
+
+  <div>
+            <label for="bloodgroup">Select your Blood Group:</label>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="">--Select--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+
+<div>
+<label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+</div>
+
+ <p>Have you donated blood before?</p>
+<div>
+    <input type="checkbox" id="firsttime" name="donation" value="First Time">
+    <label for="firsttime">First Time Donor</label>
+    <input type="checkbox" id="regular" name="donation" value="Regular Donor">
+    <label for="regular">Regular Donor</label>
+    <br><br>
+</div>
+
+  <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Survey">
+ 
+</form>
+
+</body>
+
+</html>
